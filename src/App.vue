@@ -1,20 +1,12 @@
 <template>
   <div>
-    <HeroSection />
-    <AboutSection />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HeroSection from './components/HeroSection.vue'
-import AboutSection from './components/AboutSection.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HeroSection,
-    AboutSection
-  }
+  name: 'App'
 }
 </script>
 

@@ -4,9 +4,11 @@
     <p class="text-lg text-gray-700 mb-8">
       Creating thoughtful, modern spaces with an earthy aesthetic.
     </p>
-    <button class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300">
-      Learn More
-    </button>
+    <router-link to="/about">
+      <button class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+        Start Your Project
+      </button>
+    </router-link>
   </section>
 </template>
 
