@@ -50,7 +50,7 @@ export default {
   color: #ffffff;
   text-decoration: none;
   font-size: 0.7rem;
-  font-family: Helvetica;
+  font-family: Montserrat;
   font-weight: 500;
   transition: color 0.3s ease;
 }

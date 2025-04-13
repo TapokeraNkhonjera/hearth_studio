@@ -39,10 +39,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 0;
   margin: 0;
-  overflow: hidden;
   position: relative;
   text-align: center;
 }
@@ -61,11 +59,11 @@ export default {
   color: white;
   padding: 6px 12px;
   font-size: 0.7rem;
-  font-family: Helvetica;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 
 .start-button:hover {
@@ -75,11 +73,16 @@ export default {
 </style>
 
 <style>
-/* Global Reset (make sure this is in App.vue or main.css if needed) */
+/* Global Reset (should go in App.vue or main.css, not inside scoped!) */
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 </style>
